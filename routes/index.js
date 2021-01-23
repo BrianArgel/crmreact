@@ -32,7 +32,7 @@ module.exports = function() {
     router.get('/productos', auth,  productosController.mostrarProductos)
 
     //producto por id 
-    router.get('/productos/:idProducto', auth,  productosController.mostrarProducto)
+    router.get('/productos/:idProducto',  productosController.mostrarProducto)
 
     //actualiza productos
     router.put('/productos/:idProducto',  productosController.subirArchivo ,
