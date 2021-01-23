@@ -35,7 +35,7 @@ module.exports = function() {
     router.get('/productos/:idProducto', auth,  productosController.mostrarProducto)
 
     //actualiza productos
-    router.put('/productos/:idProducto', auth,  productosController.subirArchivo ,
+    router.put('/productos/:idProducto',  productosController.subirArchivo ,
     productosController.actualizarProducto)
 
     //eliminar productos
